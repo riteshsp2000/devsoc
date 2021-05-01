@@ -1,22 +1,53 @@
 import * as React from 'react';
-import './App.css';
 
-import logo from './logo.svg';
+import {
+  makeStyles,
+  Container,
+  ThemeProvider,
+  CssBaseline,
+} from '@material-ui/core';
 
-class App extends React.Component {
-  public render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+import AppBar from './components/AppBar';
+import theme from './config/theme';
+
+const App = () => {
+  const classes = useStyles();
+  const [url, setUrl] = React.useState('https://trial.com');
+  const [requestType, setRequestType] = React.useState('GET');
+
+  const sendRequest = () => {
+    // tslint:disable-next-line: no-console
+    console.log(url, requestType);
+  };
+
+  const appBarProps = {
+    url,
+    setUrl,
+    requestType,
+    setRequestType,
+    sendRequest,
+  };
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className={classes.root}>
+        <Container>
+          <AppBar {...appBarProps} />
+        </Container>
       </div>
-    );
-  }
-}
+    </ThemeProvider>
+  );
+};
 
 export default App;
+
+const useStyles = makeStyles(() => ({
+  root: {
+    width: '100%',
+    height: 'auto',
+    minHeight: '100vh',
+    backgroundColor: '#282828',
+    paddingTop: '30px',
+  },
+}));
