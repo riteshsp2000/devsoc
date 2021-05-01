@@ -12,15 +12,15 @@ We have built a few VS Code extensions during this hackathon process. It is stil
 
 -    **spotificode** -> an extension that launches a Chrome/Chromium browser to the 4 popular music sites and you can control the playback from within your Visual Studio Code editor.
 
-> Installation Guide: [Readme.md](./gitignore-generator/Readme.md)
+> Installation Guide: [Readme.md](./spotificode/Readme.md)
 
 -    **postman client** - an extension that sends http/https API request using any of the methods GET, POST, PUT, DELETE, PATCH, HEAD and OPTIONS with option of post body as Text, Json, Xml, Form Data and Form-Url-Encoded.
 
-> Installation Guide: [Readme.md](./gitignore-generator/Readme.md)
+> Installation Guide: [Readme.md](./Postman-client/Readme.md)
 
 -    **dbd** - an extension that helps you visualise database schemas. The extension redirects to the browser with the database visualisation.
 
-> Installation Guide: [Readme.md](./gitignore-generator/Readme.md)
+> Installation Guide: [Readme.md](./dbd/Readme.md)
 
 <hr>
 
