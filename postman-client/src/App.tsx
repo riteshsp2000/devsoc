@@ -6,19 +6,32 @@ import {
   ThemeProvider,
   CssBaseline,
 } from '@material-ui/core';
+import axios from 'axios';
 
 import AppBar from './components/AppBar';
 import TabNav from './components/TabNav';
+import Response from './components/Response';
 import theme from './config/theme';
 
 const App = () => {
   const classes = useStyles();
   const [url, setUrl] = React.useState('https://trial.com');
   const [requestType, setRequestType] = React.useState('GET');
+  const [data, setData] = React.useState<any>(null);
+  const [error, setError] = React.useState(false);
+  const [errorMessage, setErrorMessage] = React.useState<null | string>(null);
 
-  const sendRequest = () => {
-    // tslint:disable-next-line: no-console
-    console.log(url, requestType);
+  const sendRequest = async () => {
+    // @ts-ignore
+    try {
+      const { data: requestData } = await axios.get(url);
+      setData(requestData);
+      console.log(data);
+    } catch (error) {
+      setError(true);
+      setErrorMessage(error.message);
+      console.log(error);
+    }
   };
 
   const appBarProps = {
@@ -36,6 +49,7 @@ const App = () => {
         <Container>
           <AppBar {...appBarProps} />
           <TabNav />
+          <Response data={data} error={error} errorMessage={errorMessage} />
         </Container>
       </div>
     </ThemeProvider>
