@@ -12,7 +12,7 @@
             ],
             "stopOnEntry": false,
             "sourceMaps": true,
-            "outDir": "${workspaceRoot}/ext-src"
+            "outFiles": ["${workspaceRoot}/ext-src"]
         }
     ]
 }
