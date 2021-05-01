@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:dbd.helloWorld"
+        "onCommand:dbd.dbd"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "dbd.helloWorld",
-				"title": "Hello World"
+				"command": "dbd.dbd",
+				"title": "DBD"
 			}
 		]
 	},
