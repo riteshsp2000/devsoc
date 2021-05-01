@@ -1,19 +1,20 @@
 {
-  "name": "vscode-webview-react",
+  "name": "postman-client",
+  "displayName": "postman-client",
+  "description": "A Postman client to check and test apis from vscode itself.",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.55.0"
+    "vscode": "^1.5.2"
   },
-  "publisher": "rebornix",
   "activationEvents": [
-    "onCommand:react-webview.start"
+    "onCommand:postman-init"
   ],
   "main": "./build/ext-src/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "react-webview.start",
-        "title": "Start React Webview",
+        "command": "postman-init",
+        "title": "Open Postman Client",
         "category": "React"
       }
     ]
@@ -21,10 +22,8 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "terser": "3.16.0"
-  },
-  "resolutions": {
-    "terser": "3.14.1"
+    "terser": "3.16.0",
+    "vscode": "^1.1.37"
   },
   "scripts": {
     "vscode:prepublish": "./scripts/build-non-split.js && tsc -p tsconfig.extension.json",
