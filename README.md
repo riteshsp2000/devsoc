@@ -8,19 +8,19 @@ We have built a few VS Code extensions during this hackathon process. It is stil
 
 -    **gitignore generator** -> an extension that generates .gitignore file in your repository on the selection of appropriate tech stack.
 
-> Installation Guide: [Readme.md](./gitignore-generator/Readme.md)
+> Installation Guide: [Readme.md](https://github.com/riteshsp2000/devsoc/blob/master/gitignore-generator/README.md)
 
 -    **spotificode** -> an extension that launches a Chrome/Chromium browser to the 4 popular music sites and you can control the playback from within your Visual Studio Code editor.
 
-> Installation Guide: [Readme.md](./spotificode/Readme.md)
+> Installation Guide: [Readme.md](https://github.com/riteshsp2000/devsoc/blob/master/spotificode/README.md.md)
 
 -    **postman client** - an extension that sends http/https API request using any of the methods GET, POST, PUT, DELETE, PATCH, HEAD and OPTIONS with option of post body as Text, Json, Xml, Form Data and Form-Url-Encoded.
 
-> Installation Guide: [Readme.md](./Postman-client/Readme.md)
+> Installation Guide: [Readme.md](https://github.com/riteshsp2000/devsoc/blob/master/Postman-client/README.md)
 
 -    **dbd** - an extension that helps you visualise database schemas. The extension redirects to the browser with the database visualisation.
 
-> Installation Guide: [Readme.md](./dbd/Readme.md)
+> Installation Guide: [Readme.md](https://github.com/riteshsp2000/devsoc/blob/master/dbd/README.md)
 
 <hr>
 
