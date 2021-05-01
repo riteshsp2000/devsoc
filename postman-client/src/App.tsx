@@ -8,6 +8,7 @@ import {
 } from '@material-ui/core';
 
 import AppBar from './components/AppBar';
+import TabNav from './components/TabNav';
 import theme from './config/theme';
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
       <div className={classes.root}>
         <Container>
           <AppBar {...appBarProps} />
+          <TabNav />
         </Container>
       </div>
     </ThemeProvider>
