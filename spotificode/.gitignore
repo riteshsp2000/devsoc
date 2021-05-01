@@ -1,0 +1,7 @@
+*.vsix
+dist/
+icon/res/
+node_modules
+out
+package-lock.json
+src/ref
